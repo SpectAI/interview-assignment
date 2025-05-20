@@ -3,12 +3,23 @@ SPECT AI - Interview Take Home Assignment
 Author: Ian Mendoza Juarez
 Date: May 20, 2025
 '''
+from openai import OpenAI
+client = OpenAI()
+
+
+
+
+
 
 # Possible variables:
 # extractedData = [] Somewhere that stores the Product Name and Manufacturer Name. Page num as well, but later.
 # Need some sort of map to avoid logging duplicates. i.e. prodMap {} with the Key being Product Name and Manu. Value = which page numbers they can be found?
 
 #Reference, basic start to learning how to use OpenAI api : "https://www.youtube.com/shorts/ZkFKF-ohsKk"
+#https://platform.openai.com/docs/quickstart?api-mode=responses
+
+
+
 
 
 def PLACEHOLDER(pdfFilePath):
@@ -16,7 +27,7 @@ def PLACEHOLDER(pdfFilePath):
     for pageNum in pdfFilePath: #from page 1 (index 0) to the last page (pdfFilePath.pageCount - 1)
 
          
-    #Extract Data following constraints. Bonus, page number tracking.
+    #Extract Data following constraints. Bonus, page number tracking. Learn OpenAI APi and how to use it effectively.
     #Kaboom, CSV output
 
 
