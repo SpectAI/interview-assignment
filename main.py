@@ -3,7 +3,8 @@ SPECT AI - Interview Take Home Assignment
 Author: Ian Mendoza Juarez
 Date: May 20, 2025
 '''
-from openai import OpenAI
+from openai import OpenAI 
+import pandas as pd
 #import os Irrelevant for this since only devs will see this.
 #openai.api_key = os.getenv("OPENAI_API_KEY")
 
