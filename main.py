@@ -4,7 +4,14 @@ Author: Ian Mendoza Juarez
 Date: May 20, 2025
 '''
 from openai import OpenAI
+#import os Irrelevant for this since only devs will see this.
+#openai.api_key = os.getenv("OPENAI_API_KEY")
+
 client = OpenAI()
+client.files.create(
+    file = open("pdfFilePath", "rb"),
+    purpose = "user_data"
+)
 
 
 
@@ -17,8 +24,7 @@ client = OpenAI()
 
 #Reference, basic start to learning how to use OpenAI api : "https://www.youtube.com/shorts/ZkFKF-ohsKk"
 #https://platform.openai.com/docs/quickstart?api-mode=responses
-
-
+#I think i found the magic sauce https://platform.openai.com/docs/guides/pdf-files?api-mode=responses
 
 
 
